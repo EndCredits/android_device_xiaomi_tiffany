@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 -include device/xiaomi/tiffany/prop.mk
+TARGET_SYSTEM_PROP := device/xiaomi/tiffany/adreno.prop
 
 # Ramdisk
 PRODUCT_PACKAGES += \
