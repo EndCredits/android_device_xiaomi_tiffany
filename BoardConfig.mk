@@ -17,12 +17,14 @@
 -include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/tiffany
+VENDOR_PATH := vendor/xiaomi/tiffany
+VENDOR_COMMON_PATH := vendor/xiaomi/msm8953-common
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := lightning-tiffany_defconfig
+TARGET_KERNEL_CONFIG := tiffany_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -41,6 +43,9 @@ VENDOR_SECURITY_PATCH := 2019-05-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tiffany/BoardConfigVendor.mk

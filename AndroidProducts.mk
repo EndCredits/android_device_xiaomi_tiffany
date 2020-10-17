@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tiffany.mk
+    $(LOCAL_DIR)/revengeos_tiffany.mk
+
+COMMON_LUNCH_CHOICES := \
+    revengeos_tiffany-user \
+    revengeos_tiffany-userdebug \
+    revengeos_tiffany-eng \
