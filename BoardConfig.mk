@@ -51,5 +51,15 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := true
+BOARD_VNDK_VERSION := current
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
+# Twrp
+-include $(DEVICE_PATH)/twrp/twrp.mk
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tiffany/BoardConfigVendor.mk
