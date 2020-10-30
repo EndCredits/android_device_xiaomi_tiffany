@@ -17,8 +17,6 @@
 -include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/tiffany
-VENDOR_PATH := vendor/xiaomi/tiffany
-VENDOR_COMMON_PATH := vendor/xiaomi/msm8953-common
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -49,3 +47,7 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tiffany/BoardConfigVendor.mk
+
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tiffany
+TARGET_RECOVERY_DEVICE_MODULES := libinit_tiffany
