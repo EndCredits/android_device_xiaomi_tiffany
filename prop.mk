@@ -15,3 +15,7 @@ vendor.camera.hal1.packagelist=com.whatsapp \
 persist.camera.dual.camera=0 \
 persist.camera.eis.enable=1
 
+#Date Fixes
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.delta_time.enable=true \
+persist.delta_time.enable=true
