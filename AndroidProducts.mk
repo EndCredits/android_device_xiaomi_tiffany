@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_tiffany.mk
+    $(LOCAL_DIR)/lineage_tiffany.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_tiffany-user \
-    arrow_tiffany-userdebug \
-    arrow_tiffany-eng \
+    lineage_tiffany-user \
+    lineage_tiffany-userdebug \
+    lineage_tiffany-eng \
