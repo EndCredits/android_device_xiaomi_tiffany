@@ -64,6 +64,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/msm8996
 
+# VNDK
+PRODUCT_PACKAGES += \
+		vndk_package \
+		libstdc++.vendor
 
 # Touch HAL
 PRODUCT_PACKAGES += \
