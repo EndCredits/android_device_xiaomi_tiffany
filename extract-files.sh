@@ -36,6 +36,4 @@ export DEVICE=tiffany
 export DEVICE_COMMON=msm8953-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2018
-
-./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
+"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
