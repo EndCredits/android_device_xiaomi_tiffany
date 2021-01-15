@@ -25,11 +25,11 @@ $(call inherit-product, device/xiaomi/tiffany/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 IS_PHONE := true
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tiffany
-PRODUCT_NAME := dot_tiffany
+PRODUCT_NAME := aosp_tiffany
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 5X
