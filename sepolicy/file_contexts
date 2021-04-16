@@ -6,6 +6,3 @@
  
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
-
-# persist
-/persist(/.*)?           u:object_r:persist_file:s0
